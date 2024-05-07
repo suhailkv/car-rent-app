@@ -13,31 +13,31 @@ module.exports = {
      * }], {});
      */
     await queryInterface.bulkInsert(
-      "Vehicles",
+      "VehicleTypes",
       [
         {
-          name: "Maruti 800",
-          vehicleTypeId: 1,
+          name: "Hatchback",
+          num_of_wheels: 4,
         },
         {
-          name: "Maruti Swift Dezire",
-          vehicleTypeId: 2,
+          name: "Sedan",
+          num_of_wheels: 4,
         },
         {
-          name: "Tata Punch",
-          vehicleTypeId: 3,
+          name: "SUV",
+          num_of_wheels: 4,
         },
         {
-          name: "Bajaj Pulsar 180",
-          vehicleTypeId: 5,
+          name: "Cruiser",
+          num_of_wheels: 4,
         },
         {
-          name: "Tata Sumo",
-          vehicleTypeId: 4,
+          name: "Bike",
+          num_of_wheels: 2,
         },
         {
-          name: "Hercules",
-          vehicleTypeId: 6,
+          name: "Cycle",
+          num_of_wheels: 2,
         },
       ],
       {}
@@ -51,6 +51,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-    await queryInterface.bulkDelete("Vehicles", null, {});
+    await queryInterface.bulkDelete("VehicleTypes", null, {});
   },
 };
