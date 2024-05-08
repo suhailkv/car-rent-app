@@ -80,7 +80,7 @@ const FormComp = () => {
   const handleChange = (field, value) => {
     setFormData((prev) => {
       if (field === "start" || field === "end")
-        return { ...prev, [field]: value.toISOString() };
+        return { ...prev, [field]: value?.toISOString() };
       return { ...prev, [field]: value };
     });
   };
