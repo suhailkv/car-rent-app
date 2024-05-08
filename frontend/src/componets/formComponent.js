@@ -126,6 +126,7 @@ const FormComp = () => {
                 url={`${CONSTANTS.BACKEND_URL}/${CONSTANTS.VEHICLE_API}/${formData.vehicleType}`}
                 inputModifier={handleChange}
                 type="vehicleModel"
+                modifyStep={setStep}
               />
             )}
             {step === 4 && (

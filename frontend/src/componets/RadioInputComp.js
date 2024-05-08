@@ -7,6 +7,11 @@ const RadioInputComp = (props) => {
     async function call() {
       try {
         const respData = await (await fetch(props.url)).json();
+        if (!respData.length) {
+          alert("All bookings for this category are fully booked.");
+          props.modifyStep(2);
+          return;
+        }
         setRadioData(respData);
       } catch (error) {
         alert(`Error : ${error.message}`);
