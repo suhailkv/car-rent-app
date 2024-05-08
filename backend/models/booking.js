@@ -15,6 +15,8 @@ const Booking = sequelize.define(
     },
     startDate: { type: DataTypes.DATE, allowNull: false },
     endDate: { type: DataTypes.DATE, allowNull: true },
+    firstName: { type: DataTypes.STRING, allowNull: false },
+    lastName: { type: DataTypes.STRING, allowNull: false },
   },
   {
     timestamps: false,
