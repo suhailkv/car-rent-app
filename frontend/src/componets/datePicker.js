@@ -5,8 +5,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import dayjs from "dayjs";
 
 export default function CustomDateTimePicker(props) {
-  const [selectedDate, setSelectedDate] = useState(dayjs());
-
+  const [selectedDate, setSelectedDate] = useState(null);
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <Box sx={{ marginBottom: 3 }}>
